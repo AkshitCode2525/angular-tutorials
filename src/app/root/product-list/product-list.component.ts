@@ -6,12 +6,12 @@ import { products } from '../products';
   styleUrls: ['./product-list.component.css'],
 })
 export class ProductListComponent implements OnInit {
-  products = [...products];
+  products = products;
   share() {
     window.alert('Product is successfully shared.');
   }
   onNotify() {
-    window.alert('Nofication is enabled');
+    window.alert('You will be notified when the product goes on sale');
   }
 
   constructor() {}
