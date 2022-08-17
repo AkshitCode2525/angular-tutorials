@@ -7,6 +7,9 @@ import { products } from './products';
 })
 export class ProductListComponent implements OnInit {
   products = products;
+  share() {
+    alert('Product is successfully shared.');
+  }
 
   constructor() {}
 

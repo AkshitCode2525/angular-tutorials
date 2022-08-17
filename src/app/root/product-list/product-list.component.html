@@ -1,5 +1,6 @@
 <p>product-list works!</p>
 <div *ngFor="let product of products">
-  <a href="#" [title]="product.name +' details'">{{ product.name }}</a>
+  <a href="#" [title]="product.name + ' details'">{{ product.name }}</a>
   <p *ngIf="product.description">{{ product.description }}</p>
+  <button type="button" (click)="share()">Share</button>
 </div>
